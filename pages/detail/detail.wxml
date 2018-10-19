@@ -1,0 +1,5 @@
+<!--pages/detail/detail.wxml-->
+<view wx:for="{{goods.goodsInfo}}">
+  <text>{{item.goodsName}}</text>
+  <text>:{{item.price}}元</text>
+</view>

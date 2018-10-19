@@ -1,0 +1,10 @@
+
+<view wx:for="{{goodsList}}" wx:for-item="value" wx:for-index="index">
+  <text>{{index}}:{{value.goodsType}}</text>
+  <!-- <text>{{value.goodsInfo}}</text> -->
+  <view wx:for="{{value.goodsInfo}}">
+  <navigator url="../detail/detail?id={{value.id}}" class='goodsName'>
+    {{item.goodsName}}
+  </navigator>
+  </view>
+</view>

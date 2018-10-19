@@ -1,0 +1,22 @@
+<!--pages/my/my.wxml-->
+<text>this is my page</text>
+<view>
+  <text>心慌慌</text>
+</view>
+<view>
+<text>{{name}} {{age}}</text>
+</view>
+<view class='out' catchtap='tapout' id='1'>
+    外层
+  <view class='middle' catchtap='tapmiddle' id='2'>
+    中间层
+    <view class='in' catchtap='tapinner' id='3'
+    catchlongtap='catchlongtap'                             catchtouchstart='catchtouchstart'
+    catchtouchmove='catchtouchmove'
+    catchtouchend='catchtouchend'
+    >
+      内层
+    </view>
+  </view>
+</view>
+<button bindtap='goGoods'>跳转到goods</button>
